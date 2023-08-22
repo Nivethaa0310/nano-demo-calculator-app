@@ -10,15 +10,15 @@ def greeting():
 
 @app.route("/calculator/add", methods=['POST'])
 def add():
-    num1 = int(request.args.get('num1'))
-    num2 = int(request.args.get('num2'))
+    num1 = int(request.args.get('first'))
+    num2 = int(request.args.get('second'))
     result = num1 + num2
     return jsonify({'result': result})
 
 @app.route("/calculator/subtract", methods=['POST'])
 def subtract():
-    num1 = int(request.args.get('num1'))
-    num2 = int(request.args.get('num2'))
+    num1 = int(request.args.get('first'))
+    num2 = int(request.args.get('second'))
     result = num1 - num2
     return jsonify({'result': result})
 

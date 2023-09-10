@@ -13,7 +13,7 @@ def add():
     fm=data['first']
     sm=data['second']
     res={'result':fm+sm}
-    return res
+    return res 
 
     
 
